@@ -1,0 +1,32 @@
+body {
+  background: white;
+  padding: 0;
+}
+
+p {
+  font-family:Raleway;
+  color: black;
+  text-align: left;
+}
+
+h1 {
+  color: #c71585;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 80px; 
+  width: 100%;
+  font-family:Raleway;
+}
+
+h3 {
+  font-family:Raleway;
+  color: black;
+}
+
+.introduction {
+  background-color: #ffe6ff;
+}
+
+#name {
+  background-color: AliceBlue;
+}
