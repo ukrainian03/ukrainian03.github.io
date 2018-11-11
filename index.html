@@ -10,7 +10,33 @@
   <h1>Life of a Ukrainian</h1>
   <img src="//cdn.shopify.com/s/files/1/1782/5295/files/picsart_large.gif?v=1532493108" alt="A cute, little, rainbow-colored unicorn licking the screen."
     style="float: right; width: 300px; height: 300px;">
+	
+  <svg height="210" width="500">
+  <polygon points="100,5 50,120 150,40 40,40 120,120" style="fill:magenta;stroke:red;stroke-width:5;fill-rule:nonzero;"/>
+  </svg>
 
+
+  <canvas id="myCanvas" width="875" height="150" style="border:1px solid red";>
+  </canvas>
+
+  <script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "25px Verdana";
+
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "magenta");
+gradient.addColorStop("0.5", "red");
+gradient.addColorStop("1", "magenta");
+
+ctx.strokeStyle = gradient;
+ctx.strokeText("Yevheniya Krasynska", 300, 100);
+
+  </script>
+
+	
   <div class="introduction">
 
     <h3>About Me</h3>
@@ -19,9 +45,13 @@
       with a concentration in International Relations, and a minor in Computer Science. I tend to have a rush of excitement
       when starting new projects, but the longer it takes to complete, my patience runs out. I have done a lot of community service
       and like to be hands on.<br/><br/>I am almost always dependent. I like roller coasters,
-      football and working out. My favorite color is red. I hate spicy food and people who don't speak their minds.
+      football and working out. My favorite color is red. I hate spicy food and people who aren't straight forward.
       I like a hectic schedule sometimes, I hate doing nothing all day because to me it is a wasted day. </p>
 
+  <video width="320" height="240" controls>
+    <source src="IMG_6879.mp4" type="video/mp4">
+  </video>
+	  
     <h3>Education</h3>
     <ul>
       <li>Cape Coral High School '18</li>
