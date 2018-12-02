@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!--Declaring the language of the document-->
 
 <head>
   <title>Ukrainian03</title>
@@ -7,80 +7,40 @@
 </head>
 
 <body>
+  <table style="width:100%"> <!-- Table of links appearing at the top of the page, https://www.w3schools.com/html/html_tables.asp -->
+    <tr>
+    <th><a href="AboutMe.html">About Me</a></th>
+    <th><a href="Photography.html">Photography</a></th> 
+    <th><a href="Usability.html">Usability</a></th>
+    </tr>
+  </table>
+
   <h1>Life of a Ukrainian</h1>
-  <img src="//cdn.shopify.com/s/files/1/1782/5295/files/picsart_large.gif?v=1532493108" alt="A cute, little, rainbow-colored unicorn licking the screen."
-    style="float: right; width: 300px; height: 300px;">
-	
-  <svg height="210" width="500">
-  <polygon points="100,5 50,120 150,40 40,40 120,120" style="fill:magenta;stroke:red;stroke-width:5;fill-rule:nonzero;"/>
-  </svg>
-
-
-  <canvas id="myCanvas" width="875" height="150" style="border:1px solid red";>
-  </canvas>
+  
+  <table style="width:100%"><!-- Created a table to be able to place the image next to canvas -->
+    <tr>
+      <!--Had to rotate image because it came sideways-->
+      <td><img src="profile.JPG" alt="Graduation Day Photo of Me" style="width: 400px; height: 300px; transform:rotate(90deg)"></td>
+      <!--https://www.w3schools.com/html/html5_canvas.asp-->
+      <td><canvas id="myCanvas" width="1200" height="100" style="border:1px solid #FFD6EB;"></canvas></td> 
+    </tr>
+  </table>
 
   <script>
-
+<!-- Created my name in a gradient, https://www.w3schools.com/graphics/svg_intro.asp -->
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-ctx.font = "25px Verdana";
+ctx.font = "25px Raleway";
 
 var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-gradient.addColorStop("0", "magenta");
-gradient.addColorStop("0.5", "red");
-gradient.addColorStop("1", "magenta");
+gradient.addColorStop("0.35", "purple");
+gradient.addColorStop("0.525", "pink");
+gradient.addColorStop("0.625", "purple");
 
 ctx.strokeStyle = gradient;
-ctx.strokeText("Yevheniya Krasynska", 300, 100);
-
+ctx.strokeText("Yevheniya Krasynska", 500, 70);
   </script>
 
-	
-  <div class="introduction">
-
-    <h3>About Me</h3>
-    <p>My name is <span id="name"> Yevheniya Krasynska.</span> Shortly after I was born (in UA), I moved to sunnyside Florida with my parents and sister.
-      I am a FTIC sophmore at FGCU and live off campus. I currently study Political Science
-      with a concentration in International Relations, and a minor in Computer Science. I tend to have a rush of excitement
-      when starting new projects, but the longer it takes to complete, my patience runs out. I have done a lot of community service
-      and like to be hands on.<br/><br/>I am almost always dependent. I like roller coasters,
-      football and working out. My favorite color is red. I hate spicy food and people who aren't straight forward.
-      I like a hectic schedule sometimes, I hate doing nothing all day because to me it is a wasted day.<br/><br/> One of my favorite hobbies
-      is ice skating, even though I'm not the best at it. It makes me feel free and happy. </p>
-
-  <video width="320" height="240" controls>
-    <source src="IMG_6879.MP4" type="video/mp4">
-  </video>
-	  
-    <h3>Education</h3>
-    <ul>
-      <li>Cape Coral High School '18</li>
-      <li>Florida Gulf Coast University '22</li>
-    </ul>
-
-    <h3>Work Samples</h3>
-    <ul>
-      <li><a href="https://scratch.mit.edu/projects/245184793/">Scratch Project</a></li>
-    </ul>
-
-    <h3>Accomplishments</h3>
-    <ul>
-      <li>Student of the Year '11</li>
-      <li>Bruce L. Scheiner Award Recipient '14</li>
-      <li>Four Year Varsity Tennis Player</li>
-      <li>International Baccaluareate Diploma</li>
-      <li>FGCU President's Gold Scholarship</li>
-      <li>FL Bright Futures</li>
-    </ul>
-
-    <h3>Links</h3>
-    <ul>
-      <li><a href="https://www.codecademy.com/ukrainian03">Codecademy</a></li>
-      <li><a href="https://github.com/ukrainian03">GitHub</a></li>
-	  <li><a href="FieldsReport.pdf">Fields Report</a> </li>
-    </ul>
-
-  </div>
-
 </body>
+</html>

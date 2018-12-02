@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: #FFD6EB;
   padding: 0;
 }
 
@@ -10,7 +10,7 @@ p {
 }
 
 h1 {
-  color: #c71585;
+  color: #800080;
   font-size: 2em;
   text-align: center;
   padding-top: 60px; 
@@ -18,15 +18,57 @@ h1 {
   font-family:Raleway;
 }
 
-h3 {
+h2 {
   font-family:Raleway;
   color: black;
 }
 
 .introduction {
-  background-color: #ffe6ff;
+  background-color: #FFD6EB;
 }
 
 #name {
-  background-color: AliceBlue;
+  background-color: #FFD6EB;
+}
+
+table {
+  width: 100%; 
+    background-color:white;
+}
+
+image {
+  margin: auto;
+  position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    position: relative;
+  padding-bottom: 100px; 
+}
+
+a:link {
+    color: #800080; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #800080;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #800080;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #800080;
+    background-color: transparent;
+    text-decoration: underline;
 }
