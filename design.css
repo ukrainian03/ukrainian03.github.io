@@ -23,6 +23,12 @@ h2 {
   color: black;
 }
 
+.h2_potato {
+  font-family:Raleway;
+  color: black;
+  text-align: center;
+}
+
 .introduction {
   background-color: #FFD6EB;
 }
@@ -49,6 +55,24 @@ canvas {
   padding-bottom: 100px; 
 }
 
+.img_thumb {
+    border: 1px solid #FFD6EB;
+    border-radius: 4px;
+    padding: 20px;
+    width: 200px;
+}
+
+.img_thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 a:link {
     color: #800080; 
     background-color: transparent; 
@@ -71,4 +95,8 @@ a:active {
     color: #800080;
     background-color: transparent;
     text-decoration: underline;
+}
+
+body{
+  margin: 0;
 }
